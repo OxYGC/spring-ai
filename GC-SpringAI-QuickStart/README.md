@@ -105,7 +105,7 @@ AI代码解释
 
 复制
 
-```javascript
+```
 Weiz-SpringAI-QuickStart/
 ├── src/
 │   ├── main/
@@ -130,7 +130,7 @@ AI代码解释
 
 复制
 
-```javascript
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -191,7 +191,7 @@ AI代码解释
 
 复制
 
-```javascript
+```conf
 spring.application.name=Weiz-SpringAI-QuickStart
 
 server.port=8080
@@ -214,7 +214,7 @@ AI代码解释
 
 复制
 
-```javascript
+```java
 import org.springframework.ai.deepseek.DeepSeekChatModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -248,7 +248,7 @@ AI代码解释
 
 复制
 
-```javascript
+```
 你好！我是DeepSeek，由深度求索公司创造的AI助手！😊 我是一个纯文本模型，虽然不支持多模态识别功能，但我有文件上传功能，可以帮你处理图像、txt、pdf、ppt、word、excel等文件，并从中读取文字信息进行分析处理。我完全免费使用，拥有128K的上下文长度，还支持联网搜索（需要你在Web/App中手动点开联网搜索按键）。 你可以通过官方应用商店下载我的App来使用。我很乐意帮助你解答问题、处理文档、进行对话交流等等！ 有什么我可以帮你的吗？无论是学习、工作还是日常生活中的问题，我都很愿意协助你！✨
 ```
 
@@ -266,7 +266,7 @@ AI代码解释
 
 复制
 
-```javascript
+```java
 @PostMapping("/chatStream")
     public SseEmitter chatStream(@RequestBody ChatRequest chatRequest) {
         SseEmitter emitter = new SseEmitter(Long.MAX_VALUE);
@@ -307,7 +307,7 @@ AI代码解释
 
 代码语言：javascript
 
-```javascript
+```xml
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
